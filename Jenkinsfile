@@ -9,7 +9,7 @@ pipeline {
       }
     stage('Build') {
         steps {
-             echo "build started"
+             echo "build started well"
              echo "preparing"
 
         }
