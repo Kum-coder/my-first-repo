@@ -1,0 +1,28 @@
+pipeline {
+  agent any
+  stages {
+      stage('Welcome') {
+           steps {
+                echo "welcome to jenkins"
+
+           }
+      }
+    stage('Build') {
+        steps {
+             echo "build started"
+             echo "preparing"
+
+        }
+    }
+   stage('Test') {
+      steps {
+           echo "testing the application"
+      }
+  }
+  stage('Deploy') {
+      steps {
+          echo " application deployed"
+      }
+  }
+}
+}
